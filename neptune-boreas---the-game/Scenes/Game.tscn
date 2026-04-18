@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://c4htean4qsvne"]
+
+[ext_resource type="Texture2D" uid="uid://b4an6shv0r4j4" path="res://Background.png" id="1_iukft"]
+[ext_resource type="PackedScene" uid="uid://cxp4k2drat8t2" path="res://Scenes/Ship.tscn" id="2_gl6un"]
+[ext_resource type="AudioStream" uid="uid://dva60x7vcdt0i" path="res://MusicaFondo.ogg" id="3_j5yw3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gl6un"]
+size = Vector2(545, 1195)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j5yw3"]
+size = Vector2(2195, 185)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kldst"]
+size = Vector2(424.5, 1166.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2bpf"]
+size = Vector2(2394, 340.5)
+
+[node name="Game" type="Node2D" unique_id=2077255356]
+
+[node name="Node2D" type="Sprite2D" parent="." unique_id=1762908001]
+texture = ExtResource("1_iukft")
+
+[node name="Ship" parent="." unique_id=1678476247 instance=ExtResource("2_gl6un")]
+
+[node name="Limits" type="StaticBody2D" parent="." unique_id=805460635]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limits" unique_id=497783785]
+position = Vector2(1206.5, 9.5)
+shape = SubResource("RectangleShape2D_gl6un")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Limits" unique_id=1737295170]
+position = Vector2(30.5, 606.5)
+shape = SubResource("RectangleShape2D_j5yw3")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Limits" unique_id=1480768588]
+position = Vector2(-1145.25, -11.25)
+shape = SubResource("RectangleShape2D_kldst")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Limits" unique_id=1669203433]
+position = Vector2(-35, -686.25)
+shape = SubResource("RectangleShape2D_b2bpf")
+
+[node name="MusicaFondo" type="AudioStreamPlayer" parent="." unique_id=260722948]
+stream = ExtResource("3_j5yw3")
+autoplay = true
+parameters/looping = true

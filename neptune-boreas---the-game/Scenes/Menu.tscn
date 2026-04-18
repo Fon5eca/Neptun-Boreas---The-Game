@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bae67lpyvmsy1"]
+
+[ext_resource type="Script" uid="uid://cuxnb4pkt32xi" path="res://Scenes/menu.gd" id="1_3kf3n"]
+[ext_resource type="Texture2D" uid="uid://ca0rtd0aql5nn" path="res://MenuBackground.jpg" id="2_6pedr"]
+
+[node name="Node2D" type="Node2D" unique_id=1841021170]
+script = ExtResource("1_3kf3n")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=209759672]
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_6pedr")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=42392632]
+offset_top = 37.0
+offset_right = 1920.0
+offset_bottom = 1117.0
+theme_override_colors/default_color = Color(0.5755824, 1, 0.3882825, 1)
+theme_override_colors/font_outline_color = Color(0.011764706, 0, 0.80784315, 1)
+theme_override_font_sizes/normal_font_size = 70
+bbcode_enabled = true
+text = "[wave]Neptun Boreas: The Game[/wave]"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=786927582]
+offset_top = -89.0
+offset_right = 1920.0
+offset_bottom = 991.0
+theme_override_font_sizes/font_size = 40
+text = "Presiona \"Enter\" para iniciar el juego"
+horizontal_alignment = 1
+vertical_alignment = 2
