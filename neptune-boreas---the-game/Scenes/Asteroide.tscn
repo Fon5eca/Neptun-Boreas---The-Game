@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://beqv32vmkhqhe"]
+
+[ext_resource type="Script" uid="uid://dx77nghhwh677" path="res://Scenes/asteroide.gd" id="1_jwbsy"]
+[ext_resource type="Texture2D" uid="uid://cfpmkfpap0gw4" path="res://Sprites/Asteroide.png" id="2_e5yme"]
+
+[node name="Asteroide" type="Sprite2D" unique_id=880725303]
+texture = ExtResource("2_e5yme")
+script = ExtResource("1_jwbsy")
+speed = 50

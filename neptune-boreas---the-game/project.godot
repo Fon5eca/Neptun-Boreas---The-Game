@@ -13,7 +13,7 @@ config_version=5
 config/name="Neptune Boreas - The Game"
 run/main_scene="uid://bae67lpyvmsy1"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Sprites/icon.svg"
 boot_splash/main_scene="uid://c4htean4qsvne"
 
 [autoload]
@@ -63,4 +63,5 @@ Enter={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"

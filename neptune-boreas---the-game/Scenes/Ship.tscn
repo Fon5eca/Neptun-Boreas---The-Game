@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cxp4k2drat8t2"]
 
 [ext_resource type="Script" uid="uid://bvrake4a6p57r" path="res://Scenes/ship.gd" id="1_jfy60"]
-[ext_resource type="Texture2D" uid="uid://cxkcce3hjjyc8" path="res://Ship.png" id="1_v4ccy"]
+[ext_resource type="Texture2D" uid="uid://cxkcce3hjjyc8" path="res://Sprites/Ship.png" id="1_v4ccy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jfy60"]
 size = Vector2(60, 48)
@@ -15,10 +15,3 @@ texture = ExtResource("1_v4ccy")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=327636858]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_jfy60")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1018620909]
-zoom = Vector2(2, 2)
-limit_left = -959
-limit_top = -540
-limit_right = 959
-limit_bottom = 540
