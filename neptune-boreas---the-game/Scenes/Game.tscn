@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b4an6shv0r4j4" path="res://Background.png" id="1_iukft"]
 [ext_resource type="PackedScene" uid="uid://cxp4k2drat8t2" path="res://Scenes/Ship.tscn" id="2_gl6un"]
-[ext_resource type="AudioStream" uid="uid://dva60x7vcdt0i" path="res://MusicaFondo.ogg" id="3_j5yw3"]
+[ext_resource type="AudioStream" uid="uid://dva60x7vcdt0i" path="res://Sonidos/MusicaFondo.ogg" id="3_j5yw3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gl6un"]
 size = Vector2(545, 1195)
@@ -45,3 +45,5 @@ shape = SubResource("RectangleShape2D_b2bpf")
 stream = ExtResource("3_j5yw3")
 autoplay = true
 parameters/looping = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1265896702]

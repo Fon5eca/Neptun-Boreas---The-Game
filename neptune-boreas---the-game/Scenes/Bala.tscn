@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://7jd0r3te2qjx"]
+
+[ext_resource type="Script" uid="uid://bxx0mtq7d2tyq" path="res://Scripts/bala.gd" id="1_3tbbd"]
+[ext_resource type="Texture2D" uid="uid://dbxmgcb3urhor" path="res://Sprites/Bala.png" id="1_et1n4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3tbbd"]
+size = Vector2(26, 28)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1060530986]
+script = ExtResource("1_3tbbd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2025656985]
+position = Vector2(0, 7)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_3tbbd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2022504720]
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_et1n4")
