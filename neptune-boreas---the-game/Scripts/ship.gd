@@ -6,6 +6,7 @@ var bala = preload("res://Scenes/Bala.tscn")
 
 func _ready() -> void:
 	position = Vector2(0, 0)
+	add_to_group("player")
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("Left"):
